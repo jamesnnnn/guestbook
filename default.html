@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Guestbook (MongoDB API Test)
+    </title>
+    <link rel="stylesheet" href="css/guestbook.css" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/guestbook.js"></script>
+    <script type="text/javascript" src="js/colour.js"></script>
+	<meta name="description" content="Guestbook">
+	<meta name="keywords" content="guestbook,mongodb,api,test">
+	<meta name="author" content="james">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<div class="alert">
+		<div class="alert-inner">
+		</div>
+	</div>
+    
+    <h1>
+        <span class="textColour">g</span>
+		<span class="textColour">u</span>
+		<span class="textColour">e</span>
+		<span class="textColour">s</span>
+		<span class="textColour">t</span>
+        <span class="textColour">b</span>
+		<span class="textColour">o</span>
+		<span class="textColour">o</span>
+		<span class="textColour">k</span>
+    </h1>
+	
+	<div class="main-container">
+
+        <div class="guestbook-input-container">
+            <input class="gbi-name" type="text" maxlength="100" placeholder="Enter Name" />
+            <input class="gbi-email" type="text" maxlength="100" placeholder="Enter Email" /><br/>
+            <input class="gbi-age" type="number" maxlength="100" placeholder="Enter Age" /><br/>
+            <textarea class="gbi-entry" type="text" maxlength="1000" placeholder="Enter Comment" rows="5" /></textarea><br/>
+            <input class="guestbook-entry-submit" type="submit"></input>
+        </div><!--
+
+        --><div class="guestbook-entries-container">
+		</div>
+
+
+		<div class="guestbook-entry divColour clone">
+			<div class="guestbook-entry-row italic">
+					<span class="guestbook-entry-name">James</span>, 
+                    age <span class="guestbook-entry-age">34</span>, writes:	
+			</div>
+			<div class="guestbook-entry-row">
+				<div class="guestbook-entry-text">
+					<span class="value">James</span>
+				</div>		
+			</div>
+			<div class="guestbook-entry-row ipspam">
+				<div class="guestbook-entry-ip">
+					IP address: <span class="value">James</span>
+				</div>		
+                <div class="guestbook-entry-flag-spam">
+                    <svg class="svg-icon" alt= "Flag as spam" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M746.666667 106.666667L981.333333 512l-234.666666 405.333333h-469.333334L42.666667 512l234.666666-405.333333h469.333334z m-49.194667 85.333333H326.528L141.269333 512l185.258667 320h370.944l185.258667-320-185.258667-320zM469.333333 640h85.333334v85.333333h-85.333334v-85.333333z m0-341.333333h85.333334v256h-85.333334V298.666667z"  />
+                        <title>Flag as spam</title></svg>
+                </div>
+			</div>
+		</div>
+
+	</div>
+
+	
+</body>
+</html>
